@@ -1,0 +1,90 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix pre_2: <http://iagos.org/activity/> .
+@prefix pre_1: <http://iagos.org/software/> .
+@prefix pre_0: <http://iagos.org/data/> .
+@prefix iagos: <http://iagos.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix pidinst: <http://pidinst.org/> .
+@prefix bnode: <http://openprovenance.org/provtoolbox/bnode/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+pre_0:abb79917-76a6-5df5-455f-c244d6186f6d a prov:Entity , obo:SIO_000396 ;
+	rdfs:label "IAGOS_timeseries_2014020313095402_L2.nc" .
+
+pre_0:566c95a2-067a-6825-5ddb-6491f4062acf a prov:Entity , obo:SIO_000396 ;
+	rdfs:label "IAGOS_timeseries_2014020313095402_L1.nc" .
+
+pre_0:df759b38-fbbd-c905-2bcb-ac67ba6731a1 a prov:Entity , obo:SIO_000396 ;
+	rdfs:label "IAGOS_timeseries_2014020313095402_L0.nc" .
+
+pre_0:45e2adcf-0e7b-c0ae-a9b1-2c70db7ab5d4 a prov:Entity , obo:SIO_000396 ;
+	rdfs:label "IAGOS_timeseries_2014020313095402_L0A.nc" .
+
+pre_0:566c95a2-067a-6825-5ddb-6491f4062acf prov:wasAttributedTo pre_2:ae5da042-0157-2c6d-4bda-8d01baf9c736 .
+
+pre_0:df759b38-fbbd-c905-2bcb-ac67ba6731a1 prov:wasAttributedTo pre_2:fadba3af-a321-f0e6-99ac-6d4c549e680a .
+
+pre_0:45e2adcf-0e7b-c0ae-a9b1-2c70db7ab5d4 prov:wasAttributedTo pre_2:79900940-b749-be04-0f3b-d88c7e75c384 .
+
+pre_0:abb79917-76a6-5df5-455f-c244d6186f6d prov:wasAttributedTo pre_2:be35013a-d287-08bd-c292-b2e11ba529fe .
+
+pre_2:79900940-b749-be04-0f3b-d88c7e75c384 prov:wasAssociatedWith pre_1:54bc86d5-4fe5-62b9-d6e7-d26fab4c1284 .
+
+pre_2:fadba3af-a321-f0e6-99ac-6d4c549e680a prov:wasAssociatedWith pre_1:ba6d2892-63b0-a719-29b4-1c78697fb9e9 .
+
+pre_2:be35013a-d287-08bd-c292-b2e11ba529fe prov:wasAssociatedWith pre_1:e5937e7d-2522-2899-ba94-03ff3e0da4a1 .
+
+pre_2:ae5da042-0157-2c6d-4bda-8d01baf9c736 prov:wasAssociatedWith pre_1:3b431b52-ac1b-4a55-f486-fa8e356f3ae2 .
+
+pre_0:df759b38-fbbd-c905-2bcb-ac67ba6731a1 prov:wasDerivedFrom pre_0:45e2adcf-0e7b-c0ae-a9b1-2c70db7ab5d4 .
+
+pre_0:abb79917-76a6-5df5-455f-c244d6186f6d prov:wasDerivedFrom pre_0:566c95a2-067a-6825-5ddb-6491f4062acf .
+
+pre_0:566c95a2-067a-6825-5ddb-6491f4062acf prov:wasDerivedFrom pre_0:df759b38-fbbd-c905-2bcb-ac67ba6731a1 .
+
+pre_2:79900940-b749-be04-0f3b-d88c7e75c384 a prov:Activity ;
+	prov:startedAtTime "2017-08-10T13:53:44.000+01:00"^^xsd:dateTime ;
+	prov:endedAtTime "2017-08-10T13:53:44.000+01:00"^^xsd:dateTime ;
+	a obo:NCIT_C15311 ;
+	rdfs:label "Aircraft PC processing" .
+
+pre_2:be35013a-d287-08bd-c292-b2e11ba529fe a prov:Activity ;
+	prov:startedAtTime "2018-03-09T18:54:53.161Z"^^xsd:dateTime ;
+	prov:endedAtTime "2018-03-09T18:54:53.161Z"^^xsd:dateTime ;
+	a obo:NCIT_C15311 ;
+	rdfs:label "L2 validation O3-CO" .
+
+pre_2:fadba3af-a321-f0e6-99ac-6d4c549e680a a prov:Activity ;
+	prov:startedAtTime "2018-04-06T03:08:28.280+01:00"^^xsd:dateTime ;
+	prov:endedAtTime "2018-04-06T03:08:28.280+01:00"^^xsd:dateTime ;
+	a obo:NCIT_C15311 ;
+	rdfs:label "L0 data formating" .
+
+pre_2:ae5da042-0157-2c6d-4bda-8d01baf9c736 a prov:Activity ;
+	prov:startedAtTime "2018-04-13T15:50:16.540+01:00"^^xsd:dateTime ;
+	prov:endedAtTime "2018-04-13T15:50:16.540+01:00"^^xsd:dateTime ;
+	a obo:NCIT_C15311 ;
+	rdfs:label "L1 validation O3-CO" .
+
+pre_0:566c95a2-067a-6825-5ddb-6491f4062acf prov:wasGeneratedBy pre_2:ae5da042-0157-2c6d-4bda-8d01baf9c736 .
+
+pre_0:df759b38-fbbd-c905-2bcb-ac67ba6731a1 prov:wasGeneratedBy pre_2:fadba3af-a321-f0e6-99ac-6d4c549e680a .
+
+pre_0:45e2adcf-0e7b-c0ae-a9b1-2c70db7ab5d4 prov:wasGeneratedBy pre_2:79900940-b749-be04-0f3b-d88c7e75c384 .
+
+pre_0:abb79917-76a6-5df5-455f-c244d6186f6d prov:wasGeneratedBy pre_2:be35013a-d287-08bd-c292-b2e11ba529fe .
+
+pre_1:3b431b52-ac1b-4a55-f486-fa8e356f3ae2 a prov:Agent , prov:SoftwareAgent ;
+	rdfs:label "Validation-2.0.0" .
+
+pre_1:54bc86d5-4fe5-62b9-d6e7-d26fab4c1284 a prov:Agent , prov:SoftwareAgent ;
+	rdfs:label "Aircraft PC processing-2.28" .
+
+pre_1:ba6d2892-63b0-a719-29b4-1c78697fb9e9 a prov:Agent , prov:SoftwareAgent ;
+	rdfs:label "iagos-process-1.1.0" .
+
+pre_1:e5937e7d-2522-2899-ba94-03ff3e0da4a1 a prov:Agent , prov:SoftwareAgent ;
+	rdfs:label "Calibration-2.0.0" .
